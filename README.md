@@ -8,7 +8,7 @@
 数据来源于公开的天气预报**和风天气API**：[https://dev.qweather.com/docs/api/](https://dev.qweather.com/docs/api/) 通过 Axios 获取并处理。
 ## 可视化展示
 - **gif动图展示**
-![选择地址gif动图](./public/assets/展示.gif "选择地址gif动图")
+![选择地址gif动图](./public/assets/zhanshi.gif "选择地址gif动图")
 
 - **由于部署无代理功能故进来后会看到这种界面需要选择地区后即可展示**
 
