@@ -9,15 +9,15 @@
 ## 数据来源
 数据来源于公开的天气预报**和风天气API**：[https://dev.qweather.com/docs/api/](https://dev.qweather.com/docs/api/) 通过 Axios 获取并处理。
 ## 可视化展示
-![选择地址gif动图](https://cdn.nlark.com/yuque/0/2024/gif/38609502/1719381734372-f6b36607-e30d-4255-92a8-c09f27577283.gif#averageHue=%2314192d&clientId=u489e840c-b862-4&from=paste&height=864&id=u4600a519&originHeight=1080&originWidth=1920&originalType=binary&ratio=1.25&rotation=0&showTitle=true&size=9487841&status=done&style=none&taskId=ud9c0eb5c-66a5-4938-829a-43b7873c6d7&title=%E9%80%89%E6%8B%A9%E5%9C%B0%E5%9D%80gif%E5%8A%A8%E5%9B%BE&width=1536 "选择地址gif动图")
+![选择地址gif动图](./public/assets/展示.gif "选择地址gif动图")
 
 - **由于部署无代理功能故进来后会看到这种界面需要选择地区后即可展示**
 
-![图5-1 初始页面](https://cdn.nlark.com/yuque/0/2024/png/38609502/1719372997244-49bf5c83-4e29-4b8e-9b65-123afebbc943.png#averageHue=%230e1425&clientId=u489e840c-b862-4&from=paste&height=386&id=AiOYR&originHeight=884&originWidth=1605&originalType=binary&ratio=1.25&rotation=0&showTitle=true&size=622321&status=done&style=none&taskId=u8099768a-6fc6-4fb7-b7d6-a6e6c8c1589&title=%E5%9B%BE5-1%20%E5%88%9D%E5%A7%8B%E9%A1%B5%E9%9D%A2&width=700 "图5-1 初始页面")
+![图5-1 初始页面](./public/assets/image1.png "图5-1 初始页面")
 
 - **选择后的成功截图**
 
-![图5-2 成功展示页面](https://cdn.nlark.com/yuque/0/2024/png/38609502/1719372945996-29b01ace-42e3-402c-9683-6d36f5e00382.png#averageHue=%2311192b&clientId=u489e840c-b862-4&from=paste&height=392&id=jyMbC&originHeight=885&originWidth=1582&originalType=binary&ratio=1.25&rotation=0&showTitle=true&size=708363&status=done&style=none&taskId=ud269e089-32b3-4fa3-bb28-5c76dddb921&title=%E5%9B%BE5-2%20%E6%88%90%E5%8A%9F%E5%B1%95%E7%A4%BA%E9%A1%B5%E9%9D%A2&width=700 "图5-2 成功展示页面")
+![图5-2 成功展示页面](./public/assets/image2.png "图5-2 成功展示页面")
 
 ## 功能说明
 ### IP定位自动选择城市
@@ -155,7 +155,7 @@ Vue.prototype.$http = axios.create({
 1. 克隆项目：`git clone https://github.com/Luogoddes/air-weather.git`
 2. 下载nginx：`[https://nginx.org/en/download.html](https://nginx.org/en/download.html)`
 3. 赋值dist到nginx里的html文件里
-![image.png](https://cdn.nlark.com/yuque/0/2024/png/38609502/1719372290666-03f15ad0-39ae-4942-9dda-c3c13f952e1d.png#averageHue=%23fbfbfa&clientId=u489e840c-b862-4&from=paste&height=366&id=ucf3bfc68&originHeight=621&originWidth=848&originalType=binary&ratio=1.25&rotation=0&showTitle=false&size=42301&status=done&style=none&taskId=ua0777f50-61ce-4ecb-8fcd-f8b3338f8f2&title=&width=500)
+![image.png](./public/assets/image3.png)
 图
 4. 修改nginx配置在`conf/config.conf`
 ```nginx
