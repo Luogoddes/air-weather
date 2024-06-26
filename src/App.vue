@@ -1,8 +1,8 @@
 <!--
  * @Author: 洛白BG 642160753@qq.com
  * @Date: 2024-05-20 11:04:24
- * @LastEditors: 洛白BG 642160753@qq.com
- * @LastEditTime: 2024-06-13 13:12:58
+ * @LastEditors: niu luogoddes@qq.com
+ * @LastEditTime: 2024-06-24 22:58:40
  * @Description: 
 -->
 <!--
@@ -19,7 +19,6 @@
 </template>
 
 <script>
-
 import axios from 'axios';
 export default {
   name: '',
@@ -41,6 +40,7 @@ export default {
   },
   methods: {
     checkCookieData() {
+      this.getIpInfo();
       const regionFromCookie = this.$cookie.get('region');
       console.log(regionFromCookie)
       //this.getLocationData();
@@ -56,6 +56,7 @@ export default {
     },
     async getLocationData() {
       console.log("3-app-getLocationData");
+
       axios.get('/api-region')
         .then(response => {
           this.region = {
@@ -89,7 +90,9 @@ export default {
       // 将 ipInfo 和 geoInfo 存储到 cookie 和 Vuex store 中
       this.$cookie.set("region", JSON.stringify(this.region), '7d');
       this.$store.commit('setLocationData', this.region);
-    }
+    },
+    
+    
   }
 }
 
